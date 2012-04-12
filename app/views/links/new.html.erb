@@ -1,0 +1,14 @@
+<div id="container">
+	<h1>midget-URL</h1>
+	<p>Add a URL to have it midgitized.*
+	</p>
+
+	<div id="url">
+		<%= form_for @link, :validate => true do |link| %>
+			<%= link.text_field :url, {:placeholder => 'http://'} %><br /><br />
+			<%= link.submit 'shorten' %>
+		<% end %>
+	</div>
+	<br />
+	* On an ironically long Heroku domain.
+</div>

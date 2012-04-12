@@ -1,0 +1,7 @@
+<div id="container">
+	<h1>Shortened link:</h1>
+	<p><%= link_to "#{root_url}" + @link, @link %>
+	</p><br />
+	You can also see the click count for this short URL by going to:<br />
+	<p><%= link_to "#{root_url}" + "#{@link}" + "/track", "#{root_url}" + "#{@link}" + "/track" %></p>
+</div>
